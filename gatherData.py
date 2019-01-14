@@ -9,7 +9,7 @@ def main():
 	#allLinks will store the list of all the URLs for the company profiles
 	allLinks = []
 	#this loop gathers all company profile URLs
-	for i in range(1,100):
+	for i in range(1,101):
 		page = bs(driver.page_source, 'html.parser')
 		links = page.find_all('tr', {'class':'jss45'})
 		for link in links:
@@ -18,8 +18,7 @@ def main():
 			except AttributeError:
 				continue
 		driver.find_element_by_xpath("//*[@id='app']/div/div/div[2]/div/div/div[1]/div/div[1]/button[2]").click()
-		print(i)
-	print("done with collecting links")
+	print("done with collecting company profile URLs")
 	#This portion of the code iterates through all the gathered links and pulls the information we want from each link
 	companyInfo = []
 	for link in allLinks:
