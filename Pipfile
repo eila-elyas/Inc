@@ -4,11 +4,11 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-jupyter = "==5.1.0"
 pandas = "*"
 numpy = "*"
 matplotlib = "*"
 seaborn = "*"
+notebook = "==5.7.1"
 
 [dev-packages]
 
