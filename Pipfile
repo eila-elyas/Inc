@@ -9,6 +9,8 @@ numpy = "*"
 matplotlib = "*"
 seaborn = "*"
 notebook = "*"
+qgrid = "*"
+tabulate = "*"
 
 [dev-packages]
 
