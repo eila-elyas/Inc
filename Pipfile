@@ -8,7 +8,7 @@ pandas = "*"
 numpy = "*"
 matplotlib = "*"
 seaborn = "*"
-notebook = "==5.7.1"
+notebook = "*"
 
 [dev-packages]
 
