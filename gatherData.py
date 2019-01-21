@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup as bs
 from selenium import webdriver
 import pandas as pd
 import sqlite3
+import time
 
 def main():
 	driver = webdriver.PhantomJS()
@@ -22,7 +23,7 @@ def main():
 	#This portion of the code iterates through all the gathered links and pulls the information we want from each link
 	companyInfo = []
 	for link in allLinks:
-
+		print("getting " + link)
 		#Open the Company profile of each company
 		driver.get(link)
 		companyProfile = bs(driver.page_source, 'html.parser')

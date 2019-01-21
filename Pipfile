@@ -11,6 +11,8 @@ seaborn = "*"
 notebook = "*"
 qgrid = "*"
 tabulate = "*"
+"bs4" = "*"
+selenium = "*"
 
 [dev-packages]
 
